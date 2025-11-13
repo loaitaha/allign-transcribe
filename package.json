@@ -1,0 +1,23 @@
+{
+  "name": "allign-transcribe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloud-based transcription SaaS platform",
+  "workspaces": [
+    "app",
+    "worker",
+    "shared"
+  ],
+  "scripts": {
+    "dev:app": "npm run dev --workspace=app",
+    "dev:worker": "npm run dev --workspace=worker",
+    "build:app": "npm run build --workspace=app",
+    "build:worker": "npm run build --workspace=worker",
+    "lint": "npm run lint --workspaces",
+    "type-check": "npm run type-check --workspaces"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  }
+}
